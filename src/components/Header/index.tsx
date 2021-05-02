@@ -1,17 +1,25 @@
 import { useState } from 'react'
 
-const Header = () => {
+type HeaderProps = {
+  toggle: () => void;
+}
+
+const Header = ({toggle}: HeaderProps) => {
   const [select, setSelect] = useState(0)
 
   return (
-    <header className="container mx-auto relative flex flex-wrap items-center justify-between m-5">
+    <header className="flex justify-between items-center bg-backgroundColor h-16 fixed w-screen lg:px-24 py-10">
       <div className="flex justify-center items-center">
         <a href="/">
           <img src="/logo.svg" alt="Logo"/>
         </a>
       </div>
 
-      <div id="menu">
+      <button onClick={toggle} className="md:hidden cursor-pointer px-4 text-white">
+        <img width="40px" src="/menu.svg" alt=""/>
+      </button>
+
+      <div className="md:block hidden"> 
         <ul className="pl-4 space-x-2 flex flex-row text-white font-extralight">
           <a href="#about">
             <li>About</li>
@@ -27,7 +35,7 @@ const Header = () => {
           </a>
         </ul>
       </div>
-      <div className="space-x-2 flex flex-row">
+      <div className="space-x-2 md:flex flex-row hidden">
         <a href="">
           <img src="/linkedin_icon.svg" alt="Linkedin"/>
         </a>
