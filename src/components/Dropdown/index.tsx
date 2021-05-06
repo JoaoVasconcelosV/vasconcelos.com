@@ -9,7 +9,7 @@ const Dropdown = ({isOpen, toggle}: DropdownProps) => {
   return (
     <div className={isOpen 
       ? 
-      "flex flex-col fixed text-center text-white bg-backgroundColor2 items-center rounded-lg h-screen w-screen mt-20 z-20" 
+      "flex flex-col fixed text-center text-white bg-backgroundColor2 items-center rounded-lg h-screen w-screen mt-20 z-20 animate-reveal" 
       : 
       "hidden"
     }>

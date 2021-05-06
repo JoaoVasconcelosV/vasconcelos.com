@@ -75,8 +75,8 @@ export default function Home() {
         <div className='flex flex-1 flex-wrap xl:mx-20 items-center justify-center'>
           <Card title="Portifolio" image="/img-portifolio.svg" githubLink="https://github.com/JoaoVasconcelosV/vasconcelos.com" liveLink="https://vasconcelos-com.vercel.app/"/>
           <Card title="Rick and Morty" image="/img-rick_and_morty.svg" githubLink="https://github.com/JoaoVasconcelosV/rick-and-morty" liveLink="https://rick-and-morty-joao.netlify.app/"/>
-          <Card title="Podcastr" image="/img-podcastr.svg" githubLink="https://github.com/JoaoVasconcelosV/podcastr" liveLink="https://vasconcelos-com.vercel.app/"/>
-          <Card title="Proffy" image="/img-proffy.svg" githubLink="https://github.com/JoaoVasconcelosV/proffy-nlw2" liveLink="podcastr-three-gold.vercel.app" />
+          <Card title="Podcastr" image="/img-podcastr.svg" githubLink="https://github.com/JoaoVasconcelosV/podcastr" liveLink="https://podcastr-three-gold.vercel.app/"/>
+          <Card title="Proffy" image="/img-proffy.svg" githubLink="https://github.com/JoaoVasconcelosV/proffy-nlw2"/>
         </div>
       </div>
       <div id='skills' className='h-screen flex flex-col items-center pt-20 text-center'>
