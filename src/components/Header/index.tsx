@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import {Link as Scroll} from 'react-scroll'
 
 type HeaderProps = {
