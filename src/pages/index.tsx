@@ -32,8 +32,8 @@ export default function Home() {
       </Head>
 
       <Header toggle={toggle}/>
-      <Dropdown isOpen={isOpen}/>
-      <div className='bk-image text-white flex items-center justify-center flex-col h-screen'>
+      <Dropdown isOpen={isOpen} toggle={toggle}/>
+      <div id='main' className='bk-image text-white flex items-center justify-center flex-col h-screen'>
         <img src="/perfil.svg" alt="Perfil"/>     
         <span className='sm:text-xl lg:text-5xl mt-5'>
             I am <Typed 

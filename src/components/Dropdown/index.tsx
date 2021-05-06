@@ -1,8 +1,11 @@
+import { Link as Scroll } from 'react-scroll'
+
 type DropdownProps = {
   isOpen: boolean,
+  toggle: () => void,
 }
 
-const Dropdown = ({isOpen}: DropdownProps) => {
+const Dropdown = ({isOpen, toggle}: DropdownProps) => {
   return (
     <div className={isOpen 
       ? 
@@ -10,13 +13,21 @@ const Dropdown = ({isOpen}: DropdownProps) => {
       : 
       "hidden"
     }>
-      <a className="p-5 hover:text-blue text-2xl" href="#about">About</a>
+      <Scroll onClick={toggle} className="p-5 hover:text-blue text-2xl" to="about" smooth={true} duration={500}>
+        About
+      </Scroll>
       <hr className="w-screen text-backgroundColor"/>
-      <a className="p-5 hover:text-blue text-2xl" href="#projects">Projects</a>
+      <Scroll onClick={toggle} className="p-5 hover:text-blue text-2xl" to="projects" smooth={true} duration={500}>
+        Projects
+      </Scroll>
       <hr className="w-screen text-backgroundColor"/>
-      <a className="p-5 hover:text-blue text-2xl" href="#skills">Skills</a>      
+      <Scroll onClick={toggle} className="p-5 hover:text-blue text-2xl" to="skills" smooth={true} duration={500}>
+        Skills
+      </Scroll>      
       <hr className="w-screen text-backgroundColor"/>
-      <a className="p-5 hover:text-blue text-2xl" href="#timeline">Timeline</a>
+      <Scroll onClick={toggle} className="p-5 hover:text-blue text-2xl" to="timeline" smooth={true} duration={500}>
+        Timeline
+      </Scroll>
       <hr className="w-screen text-backgroundColor"/>
       <div className="flex p-2">
         <a className="p-5 transform hover:scale-125" href="">

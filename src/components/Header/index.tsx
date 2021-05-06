@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import {Link as Scroll} from 'react-scroll'
 
 type HeaderProps = {
   toggle: () => void;
@@ -8,11 +9,9 @@ const Header = ({toggle}: HeaderProps) => {
   return (
     <header className="z-10 flex justify-between items-center bg-backgroundColor h-16 fixed w-screen lg:px-24 py-10">
       <div className="flex justify-center items-center">
-        <Link href="/">
-          <a>
-            <img src="/logo.svg" alt="Logo"/>
-          </a>
-        </Link>
+        <Scroll to="main" smooth={true} duration={500}>
+          <img src="/logo.svg" alt="Logo"/>
+        </Scroll>
       </div>
 
       <button onClick={toggle} className="md:hidden cursor-pointer px-4 text-white">
@@ -21,18 +20,18 @@ const Header = ({toggle}: HeaderProps) => {
 
       <div className="md:block hidden"> 
         <ul className="pl-4 space-x-2 flex flex-row text-white font-extralight">
-          <a href="#about">
+          <Scroll to="about" smooth={true} duration={500}> 
             <li className="hover:text-blue transform hover:underline">About</li>
-          </a>
-          <a href="#projects">
+          </Scroll>
+          <Scroll to="projects" smooth={true} duration={500}> 
             <li className="hover:text-blue transform hover:underline">Projects</li>
-          </a>
-          <a href="#skills">
+          </Scroll>
+          <Scroll to="skills" smooth={true} duration={500}> 
             <li className="hover:text-blue transform hover:underline">Skills</li>
-          </a>
-          <a href="#timeline">
+          </Scroll>
+          <Scroll to="timeline" smooth={true} duration={500}> 
             <li className="hover:text-blue transform hover:underline">Timeline</li>
-          </a>          
+          </Scroll>          
         </ul>
       </div>
       <div className="space-x-2 md:flex flex-row hidden">
