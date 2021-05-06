@@ -1,15 +1,18 @@
 const Timeline = () => {
   return (
     <div className="relative w-1/2 m-20">
-      <div className="border-r-2 border-blue absolute h-full top-0" style={{left: 15}}></div>
+      <div className="border-r-2 border-blue absolute h-full top-0" style={{left: 15}} />
       <ul className="list-none m-0 p-0">
         <li className="mb-2 h-40">
           <div className="flex items-center mb-1">
-            <div className="bg-blue rounded-full h-8 w-8"></div>
-            <div className="flex-1 ml-4 text-white font-bold">"“Always evolving”</div>
+            <img src="/rocket.svg" alt="rocket" className="z-10 relative right-1 bottom-1"/>
+            <div className="flex-1 ml-4 text-white font-bold">"Always evolving"</div>
           </div>          
         </li>
         <li className="mb-2 h-40">
+          <div className="ml-12 text-white font-extralight">
+            Bacharelado Ciência da Computação
+          </div>
           <div className="flex items-center mb-1">
             <div className="bg-blue rounded-full h-8 w-8"></div>
             <div className="flex-1 ml-4 text-white font-bold">Instituto Federal de Educação, Ciência e Tecnologia do Ceará</div>
@@ -19,6 +22,9 @@ const Timeline = () => {
           </div>
         </li>
         <li className="mb-2 h-40">
+          <div className="ml-12 text-white font-extralight">
+            Ensino médio
+          </div>
           <div className="flex items-center mb-1">
             <div className="bg-blue rounded-full h-8 w-8"></div>
             <div className="flex-1 ml-4 text-white font-bold">Helenita Lopes Gurgel Valente</div>

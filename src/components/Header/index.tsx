@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 type HeaderProps = {
   toggle: () => void;
 }
@@ -6,9 +8,11 @@ const Header = ({toggle}: HeaderProps) => {
   return (
     <header className="z-10 flex justify-between items-center bg-backgroundColor h-16 fixed w-screen lg:px-24 py-10">
       <div className="flex justify-center items-center">
-        <a href="/">
-          <img src="/logo.svg" alt="Logo"/>
-        </a>
+        <Link href="/">
+          <a>
+            <img src="/logo.svg" alt="Logo"/>
+          </a>
+        </Link>
       </div>
 
       <button onClick={toggle} className="md:hidden cursor-pointer px-4 text-white">
