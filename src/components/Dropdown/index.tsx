@@ -6,23 +6,27 @@ const Dropdown = ({isOpen}: DropdownProps) => {
   return (
     <div className={isOpen 
       ? 
-      "flex flex-col fixed text-center text-white bg-backgroundColor2 items-center rounded-lg w-screen mt-20" 
+      "flex flex-col fixed text-center text-white bg-backgroundColor2 items-center rounded-lg h-screen w-screen mt-20 z-10" 
       : 
       "hidden"
     }>
-      <a className="p-2" href="/">About</a>
-      <a className="p-2" href="/">Projects</a>
-      <a className="p-2" href="/">Timeline</a>
-      <a className="p-2" href="/">Skills</a>
+      <a className="p-5 hover:text-blue text-2xl" href="/">About</a>
+      <hr className="w-screen text-backgroundColor"/>
+      <a className="p-5 hover:text-blue text-2xl" href="/">Projects</a>
+      <hr className="w-screen text-backgroundColor"/>
+      <a className="p-5 hover:text-blue text-2xl" href="/">Timeline</a>
+      <hr className="w-screen text-backgroundColor"/>
+      <a className="p-5 hover:text-blue text-2xl" href="/">Skills</a>
+      <hr className="w-screen text-backgroundColor"/>
       <div className="flex p-2">
-        <a className="p-1" href="">
-          <img src="/linkedin_icon.svg" alt="Linkedin"/>
+        <a className="p-5 transform hover:scale-125" href="">
+          <img className="w-11" src="/linkedin_icon.svg" alt="Linkedin"/>
         </a>
-        <a className="p-1" href="">
-          <img src="/instagram_icon.svg" alt="Instagram"/>
+        <a className="p-5 transform hover:scale-125" href="">
+          <img className="w-11" src="/instagram_icon.svg" alt="Instagram"/>
         </a>
-        <a className="p-1" href="">
-          <img src="/github_icon.svg" alt="Github"/>
+        <a className="p-5 transform hover:scale-125" href="">
+          <img className="w-11" src="/github_icon.svg" alt="Github"/>
         </a>
       </div>
     </div>

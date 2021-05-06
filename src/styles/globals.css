@@ -9,6 +9,14 @@
   font-family: Poppins, sans-serif;
 }
 
+.bk-image {
+  position: relative;
+  background: url(/background.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
 :root {
   --background-color: #1B1B1B;
   --blue-3A: #3ADCFF;

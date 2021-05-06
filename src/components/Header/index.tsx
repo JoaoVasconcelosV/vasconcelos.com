@@ -1,14 +1,10 @@
-import { useState } from 'react'
-
 type HeaderProps = {
   toggle: () => void;
 }
 
 const Header = ({toggle}: HeaderProps) => {
-  const [select, setSelect] = useState(0)
-
   return (
-    <header className="flex justify-between items-center bg-backgroundColor h-16 fixed w-screen lg:px-24 py-10">
+    <header className="z-10 flex justify-between items-center bg-backgroundColor h-16 fixed w-screen lg:px-24 py-10">
       <div className="flex justify-center items-center">
         <a href="/">
           <img src="/logo.svg" alt="Logo"/>
@@ -22,17 +18,17 @@ const Header = ({toggle}: HeaderProps) => {
       <div className="md:block hidden"> 
         <ul className="pl-4 space-x-2 flex flex-row text-white font-extralight">
           <a href="#about">
-            <li>About</li>
+            <li className="hover:text-blue transform hover:underline">About</li>
           </a>
-          <a href="#about">
-            <li>Projects</li>
+          <a href="#projects">
+            <li className="hover:text-blue transform hover:underline">Projects</li>
           </a>
-          <a href="#about">
-            <li>Timeline</li>
+          <a href="#skills">
+            <li className="hover:text-blue transform hover:underline">Skills</li>
           </a>
-          <a href="#about">
-            <li>Skills</li>
-          </a>
+          <a href="#timeline">
+            <li className="hover:text-blue transform hover:underline">Timeline</li>
+          </a>          
         </ul>
       </div>
       <div className="space-x-2 md:flex flex-row hidden">
