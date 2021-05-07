@@ -34,13 +34,13 @@ const Header = ({toggle}: HeaderProps) => {
         </ul>
       </div>
       <div className="space-x-2 md:flex flex-row hidden">
-        <a href="">
+        <a href="https://www.linkedin.com/in/joao-vasconcelos11" target="_blank">
           <img src="/linkedin_icon.svg" alt="Linkedin"/>
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/joao_11vasconcelos" target="_blank">
           <img src="/instagram_icon.svg" alt="Instagram"/>
         </a>
-        <a href="">
+        <a href="https://github.com/JoaoVasconcelosV" target="_blank">
           <img src="/github_icon.svg" alt="Github"/>
         </a>
       </div>

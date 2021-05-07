@@ -17,7 +17,7 @@ module.exports = {
         },        
       },
       animation: {
-        'reveal': 'reveal .5s linear',
+        'reveal': 'reveal .2s linear',
       },
     },
   },

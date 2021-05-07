@@ -6,20 +6,20 @@ import {Link as Scroll} from 'react-scroll'
 import { Header, Dropdown, Card, LoadingBar, Timeline } from '../components'
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [dropIsOpen, setDropIsOpen] = useState(false)
 
   const toggle = () => {
-    setIsOpen(!isOpen)
+    setDropIsOpen(!dropIsOpen)
   }
 
   useEffect(() => {
-    isOpen ? document.body.style.overflow = "hidden" : document.body.style.overflow = ""
-  }, [isOpen])
+    dropIsOpen ? document.body.style.overflow = "hidden" : document.body.style.overflow = ""
+  }, [dropIsOpen])
 
   useEffect(() => {
     const hideMenu = () => {
-      if(window.innerWidth > 768 && isOpen) {
-        setIsOpen(false)
+      if(window.innerWidth > 768 && dropIsOpen) {
+        setDropIsOpen(false)
       }
     }
 
@@ -33,7 +33,7 @@ export default function Home() {
       </Head>
 
       <Header toggle={toggle}/>
-      <Dropdown isOpen={isOpen} toggle={toggle}/>
+      <Dropdown isOpen={dropIsOpen} toggle={toggle}/>
       <div id='main' className='bk-image text-white flex items-center justify-center flex-col h-screen'>
         <img src="/perfil.svg" alt="Perfil"/>     
         <span className='sm:text-xl lg:text-5xl mt-5'>
@@ -59,7 +59,7 @@ export default function Home() {
       </div>
       <div id='about' className='min-h-screen flex flex-col items-center pt-20 text-center'>
         <h1>About</h1>
-        <div className="flex inline flex-col xl:flex-row sm:justify-center sm:items-center m-auto md:mx-20 2xl:mx-96 flex-1">
+        <div className="flex flex-col xl:flex-row sm:justify-center sm:items-center mb-10 md:mx-20 2xl:mx-96 flex-1">
           <img width="500rem" src="/word_laptop.svg" alt="Estudante" className="mr-3"/>
           <p className="text-white text-left md:text-2xl xl:text-xl ml-3">
             Sou desenvolvedor Júnior, tenho mais domínio na parte do Front-end mas já desenvolvi algumas aplicações em
@@ -90,8 +90,8 @@ export default function Home() {
       </div>
       <div id='timeline' className='h-screen bg-backgroundColor2 flex flex-col items-center pt-20'>
         <h1>Timeline</h1>
-        <Timeline />
-      </div>
+        <Timeline />        
+      </div>      
     </div>
   )
 }

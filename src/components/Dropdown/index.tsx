@@ -30,13 +30,13 @@ const Dropdown = ({isOpen, toggle}: DropdownProps) => {
       </Scroll>
       <hr className="w-screen text-backgroundColor"/>
       <div className="flex p-2">
-        <a className="p-5 transform hover:scale-125" href="">
+        <a className="p-5 transform hover:scale-125" href="https://www.linkedin.com/in/joao-vasconcelos11" target="_blank">
           <img className="w-11" src="/linkedin_icon.svg" alt="Linkedin"/>
         </a>
-        <a className="p-5 transform hover:scale-125" href="">
+        <a className="p-5 transform hover:scale-125" href="https://www.instagram.com/joao_11vasconcelos" target="_blank">
           <img className="w-11" src="/instagram_icon.svg" alt="Instagram"/>
         </a>
-        <a className="p-5 transform hover:scale-125" href="">
+        <a className="p-5 transform hover:scale-125" href="https://github.com/JoaoVasconcelosV" target="_blank">
           <img className="w-11" src="/github_icon.svg" alt="Github"/>
         </a>
       </div>
