@@ -1,6 +1,14 @@
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 const Card = (props) => {
+  useEffect(()=> {
+    Aos.init({ duration: 1300 })
+  }, [])
+
   return (
-    <div className="m-10 relative">
+    <div data-aos={props.animation} className="m-10 relative">
       <h3 className="text-white text-left">{props.title}</h3>
       <img className="opacity-50 hover:opacity-100 transition duration-200 md:h-56 2xl:h-80" src={props.image} alt={props.title}/>          
       <div className="absolute bottom-2 left-2 flex">

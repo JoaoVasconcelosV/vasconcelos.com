@@ -1,8 +1,16 @@
-const LoadingBar = ({title, image, concluded}) => {
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
+const LoadingBar = ({title, image, concluded, animation}) => {
+  useEffect(()=> {
+    Aos.init({ duration: 1300 })
+  }, [])
+
   const val = concluded + "%"
 
   return (
-    <div className="md:mx-20">
+    <div data-aos={animation} className="md:mx-20">
       <div className="flex">
         <img src={image} alt="title"/>
         <h1 className="text-white ml-2">{title}</h1>

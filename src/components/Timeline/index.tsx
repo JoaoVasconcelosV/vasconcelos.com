@@ -1,6 +1,14 @@
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 const Timeline = () => {
+  useEffect(()=> {
+    Aos.init({ duration: 1300})
+  }, [])
+
   return (
-    <div className="relative w-1/2 m-20">
+    <div data-aos="fade-up" className="relative w-1/2 m-20">
       <div className="border-r-2 border-blue absolute h-full top-0" style={{left: 15}} />
       <ul className="list-none m-0 p-0">
         <li className="mb-2 h-40">
