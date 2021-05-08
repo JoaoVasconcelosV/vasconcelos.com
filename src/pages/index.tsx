@@ -41,8 +41,8 @@ export default function Home() {
       <Header toggle={toggle}/>
       <Dropdown isOpen={dropIsOpen} toggle={toggle}/>
       <div id='main' className='bk-image text-white flex items-center justify-center flex-col h-screen'>
-        <img src="/perfil.svg" alt="Perfil"/>     
-        <span className='sm:text-xl lg:text-5xl mt-5'>
+        <img data-aos="zoom-in" src="/perfil.svg" alt="Perfil"/>     
+        <span data-aos="zoom-in" className='sm:text-xl lg:text-5xl mt-5'>
             I am <Typed 
               className='text-blue font-bold' 
               strings={["João Vasconcelos.", "Front-end developer.", "Student."]} 
@@ -51,13 +51,13 @@ export default function Home() {
               loop 
             />
         </span>
-        <a href="http://drive.google.com/uc?export=download&id=1O9g2tjeEjeKYCi_tf6YYJhDNeSGC6vpp">
-          <button className='bg-black m-3 p-2 rounded-lg hover:bg-backgroundColor2 hover:text-blue'>
+        <a data-aos="zoom-in" href="http://drive.google.com/uc?export=download&id=1O9g2tjeEjeKYCi_tf6YYJhDNeSGC6vpp">
+          <button data-aos="zoom-in" className='bg-black m-3 p-2 rounded-lg hover:bg-backgroundColor2 hover:text-blue'>
             Download CV
           </button>
         </a>
         
-        <Scroll className="mt-20 animate-bounce" to="about" smooth={true} duration={500}>
+        <Scroll data-aos="zoom-in" className="mt-20 animate-bounce" to="about" smooth={true} duration={500}>
           <button>
             <img src="/arrow-down.svg" alt="arrow down"/>
           </button>
@@ -66,8 +66,8 @@ export default function Home() {
       <div id='about' className='min-h-screen flex flex-col items-center pt-20 text-center'>
         <h1>About</h1>
         <div className="flex flex-col xl:flex-row sm:justify-center sm:items-center mb-10 md:mx-20 2xl:mx-96 flex-1">
-          <img data-aos="fade-right" width="500rem" src="/word_laptop.svg" alt="Estudante" className="mr-3"/>
-          <p data-aos="fade-left" className="text-white text-left md:text-2xl xl:text-xl ml-3">
+          <img data-aos="fade-down" width="500rem" src="/word_laptop.svg" alt="Estudante" className="mr-3"/>
+          <p data-aos="fade-up" className="text-white text-left md:text-2xl xl:text-xl ml-3">
             Sou desenvolvedor Júnior, tenho mais domínio na parte do Front-end mas já desenvolvi algumas aplicações em
             NodeJs. Atualmente estou focado em me aprofundar mais em ReactJs e pretendo quando já tiver um bom
             conhecimento consolidado, estudar React Native e me aprofundar em NodeJs, assim dominarei uma excelente
@@ -88,10 +88,10 @@ export default function Home() {
       <div id='skills' className='h-screen flex flex-col items-center pt-20 text-center'>
         <h1>Skills</h1>
         <div className='flex flex-1 flex-wrap mx-20 2xl:mx-80 items-center justify-center'>
-          <LoadingBar animation="fade-up-right" title="HTML" image="/html_icon.svg" concluded={80}/>
-          <LoadingBar animation="fade-up-left" title="CSS" image="/css_icon.svg" concluded={75}/>
-          <LoadingBar animation="fade-up-right" title="JavaScript" image="/js_icon.svg" concluded={70}/>
-          <LoadingBar animation="fade-up-left" title="ReactJS" image="/react_icon.svg" concluded={50}/>
+          <LoadingBar animation="flip-right" title="HTML" image="/html_icon.svg" concluded={80}/>
+          <LoadingBar animation="flip-left" title="CSS" image="/css_icon.svg" concluded={75}/>
+          <LoadingBar animation="flip-right" title="JavaScript" image="/js_icon.svg" concluded={70}/>
+          <LoadingBar animation="flip-left" title="ReactJS" image="/react_icon.svg" concluded={50}/>
         </div>
       </div>
       <div id='timeline' className='h-screen bg-backgroundColor2 flex flex-col items-center pt-20'>
