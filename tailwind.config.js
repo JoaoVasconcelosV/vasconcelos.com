@@ -14,10 +14,15 @@ module.exports = {
         reveal: {
           '0%': { transform: 'translate(100%, 0%)' },
           '100%': { transform: 'translate(0%, 0%)' },
-        },        
+        },   
+        hide: {
+          '0%': { transform: 'translate(0%, 0%)' },
+          '100%': { transform: 'translate(100%, 0%)' },
+        },   
       },
       animation: {
         'reveal': 'reveal .2s linear',
+        'hide': 'hide .2s linear',
       },
     },
   },

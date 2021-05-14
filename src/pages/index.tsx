@@ -88,10 +88,10 @@ export default function Home() {
       <div id='skills' className='h-screen flex flex-col items-center pt-20 text-center'>
         <h1>Skills</h1>
         <div className='flex flex-1 flex-wrap mx-20 2xl:mx-80 items-center justify-center'>
-          <LoadingBar animation="flip-right" title="HTML" image="/html_icon.svg" concluded={80}/>
-          <LoadingBar animation="flip-left" title="CSS" image="/css_icon.svg" concluded={75}/>
-          <LoadingBar animation="flip-right" title="JavaScript" image="/js_icon.svg" concluded={70}/>
-          <LoadingBar animation="flip-left" title="ReactJS" image="/react_icon.svg" concluded={50}/>
+          <LoadingBar animation="fade-right" title="HTML" image="/html_icon.svg" concluded={80}/>
+          <LoadingBar animation="fade-right" title="CSS" image="/css_icon.svg" concluded={75}/>
+          <LoadingBar animation="fade-right" title="JavaScript" image="/js_icon.svg" concluded={70}/>
+          <LoadingBar animation="fade-right" title="ReactJS" image="/react_icon.svg" concluded={50}/>
         </div>
       </div>
       <div id='timeline' className='h-screen bg-backgroundColor2 flex flex-col items-center pt-20'>

@@ -11,7 +11,7 @@ const Dropdown = ({isOpen, toggle}: DropdownProps) => {
       ? 
       "flex flex-col fixed text-center text-white bg-backgroundColor2 items-center rounded-lg h-screen w-screen mt-20 z-20 animate-reveal" 
       : 
-      "hidden"
+      "animate-hide hidden"
     }>
       <Scroll onClick={toggle} className="p-5 hover:text-blue text-2xl" to="about" smooth={true} duration={500}>
         About
