@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'
 
 import { Header, Dropdown, Card, LoadingBar, Timeline } from '../components'
 
-export default function Home() {
+export default function Home() {  
   const [dropIsOpen, setDropIsOpen] = useState(false)
 
   const toggle = () => {
@@ -31,6 +31,21 @@ export default function Home() {
 
     window.addEventListener('resize', hideMenu)   
   },)
+
+  if(typeof window === 'object') {        
+    window.addEventListener('scroll', function (e) {
+      let scrollPosition = window.pageYOffset;
+
+      console.log(scrollPosition);
+
+      let header = document.querySelector('header');
+      
+      if(scrollPosition != 0)
+        header.classList.add('bg-backgroundColor')
+      else
+        header.classList.remove('bg-backgroundColor')
+    })
+  }
 
   return (
     <div> 

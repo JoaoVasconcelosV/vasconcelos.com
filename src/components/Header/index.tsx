@@ -4,9 +4,9 @@ type HeaderProps = {
   toggle: () => void;
 }
 
-const Header = ({toggle}: HeaderProps) => {
+const Header = ({toggle}: HeaderProps) => {  
   return (
-    <header className="z-10 flex justify-between items-center bg-backgroundColor h-16 fixed w-screen pl-3 lg:px-24 py-10">
+    <header className="z-10 flex justify-between items-center h-16 fixed w-screen pl-3 lg:px-24 py-10 duration-300">
       <div className="flex justify-center items-center">
         <Scroll to="main" smooth={true} duration={500}>
           <img src="/logo.svg" alt="Logo"/>
