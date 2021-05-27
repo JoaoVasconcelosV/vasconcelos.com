@@ -66,9 +66,9 @@ export default function Home() {
               loop 
             />
         </span>
-        <a data-aos="zoom-in" href="http://drive.google.com/uc?export=download&id=1O9g2tjeEjeKYCi_tf6YYJhDNeSGC6vpp">
+        <a data-aos="zoom-in" href="https://drive.google.com/file/d/1S-XtDpiUNnxfN70EnnF1ync-wLibW5ZF/view?usp=sharing" target="_blank">
           <button data-aos="zoom-in" className='bg-black m-3 p-2 rounded-lg hover:bg-backgroundColor2 hover:text-blue'>
-            Download CV
+            Visualizar CV
           </button>
         </a>
         
