@@ -14,30 +14,30 @@ const Timeline = () => {
         <li className="mb-2 h-40">
           <div className="flex items-center mb-1">
             <img src="/rocket.svg" alt="rocket" className="z-10 relative right-1 bottom-1"/>
-            <div className="flex-1 ml-4 text-white font-bold">"Always evolving"</div>
+            <div className="flex-1 ml-4 text-white dark:text-backgroundColor font-bold">"Always evolving"</div>
           </div>          
         </li>
         <li className="mb-2 h-40">
-          <div className="ml-12 text-white font-extralight">
+          <div className="ml-12 text-white dark:text-backgroundColor font-extralight">
             Bacharelado Ciência da Computação
           </div>
           <div className="flex items-center mb-1">
             <div className="bg-blue rounded-full h-8 w-8"></div>
-            <div className="flex-1 ml-4 text-white font-bold">Instituto Federal de Educação, Ciência e Tecnologia do Ceará</div>
+            <div className="flex-1 ml-4 text-white dark:text-backgroundColor font-bold">Instituto Federal de Educação, Ciência e Tecnologia do Ceará</div>
           </div>
-          <div className="ml-12 text-white font-extralight">
+          <div className="ml-12 text-white dark:text-backgroundColor font-extralight">
             2017 - Atual
           </div>
         </li>
         <li className="mb-2 h-40">
-          <div className="ml-12 text-white font-extralight">
+          <div className="ml-12 text-white dark:text-backgroundColor font-extralight">
             Ensino médio
           </div>
           <div className="flex items-center mb-1">
             <div className="bg-blue rounded-full h-8 w-8"></div>
-            <div className="flex-1 ml-4 text-white font-bold">Helenita Lopes Gurgel Valente</div>
+            <div className="flex-1 ml-4 text-white dark:text-backgroundColor font-bold">Helenita Lopes Gurgel Valente</div>
           </div>
-          <div className="ml-12 text-white font-extralight">
+          <div className="ml-12 text-white dark:text-backgroundColor font-extralight">
             2014 - 2017
           </div>
         </li>

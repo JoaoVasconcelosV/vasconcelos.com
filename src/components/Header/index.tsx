@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import {Link as Scroll} from 'react-scroll'
 
 type HeaderProps = {
@@ -5,6 +6,21 @@ type HeaderProps = {
 }
 
 const Header = ({toggle}: HeaderProps) => {  
+  const [light, setLight] = useState(true);
+
+  useEffect(() => {
+    const html = document.querySelector('html');
+    if(light == true){
+      html.classList.add('dark');
+    }else {      
+      html.classList.remove('dark');
+    }
+  }, [light])
+
+  const toogleLight = () => {
+    setLight(!light);
+  }
+  
   return (
     <header className="z-10 flex justify-between items-center h-16 fixed w-screen pl-3 lg:px-24 py-10">
       <div className="flex justify-center items-center">
@@ -43,6 +59,9 @@ const Header = ({toggle}: HeaderProps) => {
         <a className="transform duration-300 hover:scale-125" href="https://github.com/JoaoVasconcelosV" target="_blank">
           <img src="/github_icon.svg" alt="Github"/>
         </a>
+        <button onClick={toogleLight} className="transform duration-300 hover:scale-125">
+          {light ? <img src="/light-off.svg" alt="Tema claro"/> : <img src="/light-on.svg" alt="Tema escuro"/>}
+        </button>
       </div>
     </header>
   )

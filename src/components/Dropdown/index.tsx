@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { Link as Scroll } from 'react-scroll'
 
 type DropdownProps = {
@@ -6,6 +7,21 @@ type DropdownProps = {
 }
 
 const Dropdown = ({isOpen, toggle}: DropdownProps) => {
+  const [light, setLight] = useState(true);
+
+  useEffect(() => {
+    const html = document.querySelector('html');
+    if(light == false){
+      html.classList.add('dark');
+    }else {      
+      html.classList.remove('dark');
+    }
+  }, [light])
+
+  const toogleLight = () => {
+    setLight(!light);
+  }
+
   return (
     <div className={isOpen 
       ? 
@@ -39,6 +55,9 @@ const Dropdown = ({isOpen, toggle}: DropdownProps) => {
         <a className="p-5 transform hover:scale-125" href="https://github.com/JoaoVasconcelosV" target="_blank">
           <img className="w-11" src="/github_icon.svg" alt="Github"/>
         </a>
+        <button onClick={toogleLight} className="p-5 transform hover:scale-125">
+          {light ? <img src="/light-off.svg" alt="Tema claro"/> : <img src="/light-on.svg" alt="Tema escuro"/>}
+        </button>
       </div>
     </div>
   )

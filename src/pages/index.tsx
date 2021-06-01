@@ -36,12 +36,10 @@ export default function Home() {
     window.addEventListener('scroll', function (e) {
       let scrollPosition = window.pageYOffset;
 
-      console.log(scrollPosition);
-
       let header = document.querySelector('header');
       
       if(scrollPosition != 0){
-        header.classList.add('bg-backgroundColor')
+        header.classList.add('bg-backgroundColor')       
         header.classList.add('duration-700')
       }
       else
@@ -84,7 +82,7 @@ export default function Home() {
         <h1>About</h1>
         <div className="flex flex-col xl:flex-row sm:justify-center sm:items-center mb-10 md:mx-20 2xl:mx-96 flex-1">
           <img data-aos="fade-down" width="500rem" src="/word_laptop.svg" alt="Estudante" className="mr-3"/>
-          <p data-aos="fade-up" className="text-white text-left md:text-2xl xl:text-xl ml-3">
+          <p data-aos="fade-up" className="text-white dark:text-backgroundColor text-left md:text-2xl xl:text-xl ml-3">
             Sou desenvolvedor Júnior, tenho mais domínio na parte do Front-end mas já desenvolvi algumas aplicações em
             NodeJs. Atualmente estou focado em me aprofundar mais em ReactJs e pretendo quando já tiver um bom
             conhecimento consolidado, estudar React Native e me aprofundar em NodeJs, assim dominarei uma excelente
@@ -93,7 +91,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div id='projects' className='min-h-screen bg-backgroundColor2 flex flex-col items-center pt-20 text-center'>
+      <div id='projects' className='min-h-screen bg-backgroundColor2 dark:bg-gray-100 flex flex-col items-center pt-20 text-center'>
         <h1>Projects</h1>
         <div className='flex flex-1 flex-wrap xl:mx-20 items-center justify-center'>
           <Card animation="flip-right" title="Portifolio" image="/img-portifolio.svg" githubLink="https://github.com/JoaoVasconcelosV/vasconcelos.com" liveLink="https://vasconcelos-com.vercel.app/"/>
@@ -116,7 +114,7 @@ export default function Home() {
           <LoadingBar animation="fade-right" title="ReactJS" image="/react_icon.svg" concluded={50}/>
         </div>
       </div>
-      <div id='timeline' className='h-screen bg-backgroundColor2 flex flex-col items-center pt-20'>
+      <div id='timeline' className='h-screen bg-backgroundColor2 dark:bg-gray-100 flex flex-col items-center pt-20'>
         <h1>Timeline</h1>
         <Timeline />        
       </div>      
