@@ -40,8 +40,10 @@ export default function Home() {
 
       let header = document.querySelector('header');
       
-      if(scrollPosition != 0)
+      if(scrollPosition != 0){
         header.classList.add('bg-backgroundColor')
+        header.classList.add('duration-700')
+      }
       else
         header.classList.remove('bg-backgroundColor')
     })
@@ -98,6 +100,11 @@ export default function Home() {
           <Card animation="flip-left" title="Rick and Morty" image="/img-rick_and_morty.svg" githubLink="https://github.com/JoaoVasconcelosV/rick-and-morty" liveLink="https://rick-and-morty-joao.netlify.app/"/>
           <Card animation="flip-right" title="Podcastr" image="/img-podcastr.svg" githubLink="https://github.com/JoaoVasconcelosV/podcastr" liveLink="https://podcastr-three-gold.vercel.app/"/>
           <Card animation="flip-left" title="Proffy" image="/img-proffy.svg" githubLink="https://github.com/JoaoVasconcelosV/proffy-nlw2"/>
+          <div data-aos="fade-up" className="w-full">
+            <button className="bg-blue text-backgroundColor p-2 mb-9 rounded-md duration-300 hover:bg-backgroundColor hover:text-white">
+              <a href="https://github.com/JoaoVasconcelosV?tab=repositories" target="_blank">Todos Repos</a>
+            </button>
+          </div>
         </div>
       </div>
       <div id='skills' className='h-screen flex flex-col items-center pt-20 text-center'>
