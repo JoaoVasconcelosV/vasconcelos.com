@@ -11,9 +11,9 @@ const Header = ({toggle}: HeaderProps) => {
   useEffect(() => {
     const html = document.querySelector('html');
     if(light == true){
-      html.classList.add('dark');
+      html.classList.remove('dark');      
     }else {      
-      html.classList.remove('dark');
+      html.classList.add('dark');
     }
   }, [light])
 

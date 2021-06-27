@@ -1,0 +1,4 @@
+#card:hover #hover{
+  transform: translateY(0);
+  opacity: 0.9;
+}

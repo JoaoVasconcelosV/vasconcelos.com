@@ -1,13 +1,13 @@
-import { useState, useEffect } from 'react'
-import Head from 'next/head'
-import Typed from 'react-typed'
-import {Link as Scroll} from 'react-scroll'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import { useState, useEffect } from 'react';
+import Head from 'next/head';
+import Typed from 'react-typed';
+import {Link as Scroll} from 'react-scroll';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import { Header, Dropdown, Card, LoadingBar, Timeline } from '../components'
 
-export default function Home() {  
+export default function Home() {    
   const [dropIsOpen, setDropIsOpen] = useState(false)
 
   const toggle = () => {
@@ -81,7 +81,7 @@ export default function Home() {
       <div id='about' className='min-h-screen flex flex-col items-center pt-20 text-center'>
         <h1>About</h1>
         <div className="flex flex-col xl:flex-row sm:justify-center sm:items-center mb-10 md:mx-20 2xl:mx-96 flex-1">
-          <img data-aos="fade-down" width="500rem" src="/word_laptop.svg" alt="Estudante" className="mr-3"/>
+          <img data-aos="fade-down" width="500rem" src="/word_laptop.svg" alt="Estudante" className="mr-3"/>                    
           <p data-aos="fade-up" className="text-white dark:text-backgroundColor text-left md:text-2xl xl:text-xl ml-3">
             Sou desenvolvedor Júnior, tenho mais domínio na parte do Front-end mas já desenvolvi algumas aplicações em
             NodeJs. Atualmente estou focado em me aprofundar mais em ReactJs e pretendo quando já tiver um bom
