@@ -22,13 +22,18 @@ const Dropdown = ({isOpen, toggle}: DropdownProps) => {
     setLight(!light);
   }
 
+  let i = 0;
+  useEffect(() => {    
+    if(isOpen) {
+      //document.getElementById('test').classList.remove('bg-backgroundColor2');
+      document.getElementById('test').classList.add('-translate-x-full');      
+    } else {
+      document.getElementById('test').classList.remove('-translate-x-full');      
+    }     
+  }, [isOpen])
+
   return (
-    <div className={isOpen 
-      ? 
-      "flex flex-col fixed text-center text-white bg-backgroundColor2 items-center rounded-lg h-screen w-screen mt-20 z-20 animate-reveal" 
-      : 
-      "animate-hide hidden"
-    }>
+    <div id="test" className={"flex flex-col fixed text-center text-white bg-backgroundColor2 items-center rounded-lg h-screen w-screen mt-20 z-20 transition duration-700 ease transform left-full"}>
       <Scroll onClick={toggle} className="p-5 hover:text-blue text-2xl" to="about" smooth={true} duration={500}>
         About
       </Scroll>
