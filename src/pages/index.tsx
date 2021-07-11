@@ -53,7 +53,7 @@ export default function Home() {
         <title>Home | Vasconcelos</title>
       </Head>
 
-      <Header toggle={toggle}/>
+      <Header isOpen={dropIsOpen} toggle={toggle}/>
       <Dropdown isOpen={dropIsOpen} toggle={toggle}/>
       <div id='main' className='bk-image text-white flex items-center justify-center flex-col h-screen'>
         <img data-aos="zoom-in" src="/perfil.svg" alt="Perfil"/>     

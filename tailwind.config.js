@@ -24,6 +24,10 @@ module.exports = {
         'reveal': 'reveal .2s linear',
         'hide': 'hide .2s linear',
       },
+      rotate: {
+        '225': '225deg',
+        '-225': '-225deg'
+      }
     },
   },
   variants: {
